@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE form SYSTEM '../xml/form.dtd'>
+
+<form>
+    <title>店舗</title>
+    <width>500</width>
+    <height>150</height>
+    <db>
+        <table>15</table>
+    </db>
+    <fields>
+        <field id="store_id" type="text">
+            <width>60</width>
+            <label>
+                <width>140</width>
+                <text>store_id</text>
+            </label>
+        </field>
+        <field id="manager_staff_id" type="text">
+            <width>200</width>
+            <label>
+                <width>140</width>
+                <text>manager_staff_id</text>
+            </label>
+        </field>
+        <field id="address_id" type="text">
+            <width>200</width>
+            <label>
+                <width>140</width>
+                <text>address_id</text>
+            </label>
+        </field>
+        <field id="last_update" type="text">
+            <width>200</width>
+            <label>
+                <width>140</width>
+                <text>last_update</text>
+            </label>
+        </field>
+    </fields>
+</form>

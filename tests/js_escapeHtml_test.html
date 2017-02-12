@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>function escapeHtml test</title>
+<p>function escapeHtml test</p>
+<script>
+
+    function log(s) {
+        document.write('<div>' + s + '</div>');
+    }
+
+    function run(s, func, param1) {
+        log(s);
+        date = new Date;
+        for (var i = 0; i < count; ++i) {
+            func(param1);
+        }
+        log(new Date - date);
+    }
+
+    function escapeHtmlS(s) {
+        s = s.split('&').join('&amp;');
+        s = s.split('<').join('&lt;');
+        s = s.split('>').join('&gt;');
+        s = s.split('"').join('&quot;');
+        s = s.split('\'').join('&#39;');
+        return s;
+    }
+
+    function escapeHtmlG(s) {
+        s = s.replace(/&/g, '&amp;');
+        s = s.replace(/</g, '&lt;');
+        s = s.replace(/>/g, '&gt;');
+        s = s.replace(/"/g, '&quot;');
+        s = s.replace(/'/g, '&#39;');
+        return s;
+    }
+
+    function escapeHtmlI(s) {
+        var r = '';
+        var l = s.length;
+        for (var i = 0; i < l; ++i) {
+            switch (s[i]) {
+                case '&':
+                    r += '&amp;';
+                    break;
+                case '<':
+                    r += '&lt;';
+                    break;
+                case '>':
+                    r += '&gt;';
+                    break;
+                case '"':
+                    r += '&quot;';
+                    break;
+                case '\'':
+                    r += '&#39;';
+                    break;
+                default:
+                    r += s[i];
+            }
+        }
+        return r;
+    }
+
+    function escapeHtmlF(s) {
+        var r = '';
+        for (var i = 0; i < s.length; ++i) {
+            switch (s[i]) {
+                case '&':
+                    r += '&amp;';
+                    break;
+                case '<':
+                    r += '&lt;';
+                    break;
+                case '>':
+                    r += '&gt;';
+                    break;
+                case '"':
+                    r += '&quot;';
+                    break;
+                case '\'':
+                    r += '&#39;';
+                    break;
+                default:
+                    r += s[i];
+                    break;
+            }
+        }
+        return r;
+    }
+
+    function escapeHtmlA(s) {
+        var r = '';
+        for (var i = 0; i < s.length; ++i) {
+            var c = s[i];
+            if (c === '&') r += '&amp;';
+            else if (c === '<') r += '&lt;';
+            else if (c === '>') r += '&gt;';
+            else if (c === '"') r += '&quot;';
+            else if (c === '\'') r += '&#39;';
+            else r += c;
+        }
+        return r;
+    }
+
+    function escapeHtmlB(s) {
+        return s.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;").replace("\"", "&quot;").replace("'", "&#039;");
+    }
+
+    var str1 = '"hoge"';
+    var str2 = '"hoge" "fuga" "foo" "bar"';
+    var str3 = '"hoge" <fuga> \'foo\' &bar&';
+    var str4 = '"ほげ" <ふが> \'ふー\' &ばー&';
+
+    var count = 10000;
+
+    log(escapeHtmlA(str1));
+    log(escapeHtmlA(str2));
+    log(escapeHtmlA(str3));
+    log(escapeHtmlA(str4));
+
+    run('split join', escapeHtmlS, str1);
+    run('replace', escapeHtmlG, str1);
+    run('seek I', escapeHtmlI, str1);
+    run('seek F', escapeHtmlF, str1);
+    run('seek A', escapeHtmlA, str1);
+    run('replace B', escapeHtmlB, str1);
+
+    run('split join', escapeHtmlS, str2);
+    run('replace', escapeHtmlG, str2);
+    run('seek I', escapeHtmlI, str2);
+    run('seek F', escapeHtmlF, str2);
+    run('seek A', escapeHtmlA, str2);
+    run('replace B', escapeHtmlB, str2);
+
+    run('split join', escapeHtmlS, str3);
+    run('replace', escapeHtmlG, str3);
+    run('seek I', escapeHtmlI, str3);
+    run('seek F', escapeHtmlF, str3);
+    run('seek A', escapeHtmlA, str3);
+    run('replace B', escapeHtmlB, str3);
+
+    run('split join', escapeHtmlS, str4);
+    run('replace', escapeHtmlG, str4);
+    run('seek I', escapeHtmlI, str4);
+    run('seek F', escapeHtmlF, str4);
+    run('seek A', escapeHtmlA, str4);
+    run('replace B', escapeHtmlB, str4);
+
+</script>

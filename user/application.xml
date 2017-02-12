@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE application SYSTEM '../xml/application.dtd'>
+
+<application>
+    <databases>
+        <database id="1">
+            <caption lang="ja_JP">接続１</caption>
+            <adapter>postgresql</adapter>
+            <!--<host></host>-->
+            <!--<port></port>-->
+            <name>dvdrental</name>
+            <user>postgres</user>
+            <pass>Top54EuZbtzOvUoT</pass>
+        </database>
+        <database id="2">
+            <caption lang="ja_JP">接続２</caption>
+            <adapter>postgresql</adapter>
+            <!--<host></host>-->
+            <!--<port></port>-->
+            <name>app1</name>
+            <user>postgres</user>
+            <pass>Top54EuZbtzOvUoT</pass>
+        </database>
+    </databases>
+    <tables>
+        <table id="1" db="1">
+            <name>actor</name>
+            <caption lang="ja_JP">俳優TBL</caption>
+        </table>
+        <table id="2" db="1">
+            <name>address</name>
+            <caption lang="ja_JP">住所TBL</caption>
+        </table>
+        <table id="3" db="1">
+            <name>category</name>
+            <caption lang="ja_JP">カテゴリマスタ</caption>
+        </table>
+        <table id="4" db="1">
+            <name>city</name>
+            <caption lang="ja_JP">市名マスタ</caption>
+        </table>
+        <table id="5" db="1">
+            <name>country</name>
+            <caption lang="ja_JP">国名マスタ</caption>
+        </table>
+        <table id="6" db="1">
+            <name>customer</name>
+            <caption lang="ja_JP">顧客TBL</caption>
+        </table>
+        <table id="7" db="1">
+            <name>film</name>
+            <caption lang="ja_JP">映画TBL</caption>
+        </table>
+        <table id="8" db="1">
+            <name>film_actor</name>
+            <caption lang="ja_JP">俳優映画結合TBL</caption>
+        </table>
+        <table id="9" db="1">
+            <name>film_category</name>
+            <caption lang="ja_JP">カテゴリ映画結合TBL</caption>
+        </table>
+        <table id="10" db="1">
+            <name>inventory</name>
+            <caption lang="ja_JP">在庫TBL</caption>
+        </table>
+        <table id="11" db="1">
+            <name>language</name>
+            <caption lang="ja_JP">言語マスタ</caption>
+        </table>
+        <table id="12" db="1">
+            <name>payment</name>
+            <caption lang="ja_JP">支払いTBL</caption>
+        </table>
+        <table id="13" db="1">
+            <name>rental</name>
+            <caption lang="ja_JP">レンタルTBL</caption>
+        </table>
+        <table id="14" db="1">
+            <name>staff</name>
+            <caption lang="ja_JP">職員TBL</caption>
+        </table>
+        <table id="15" db="1">
+            <name>store</name>
+            <caption lang="ja_JP">店舗マスタ</caption>
+        </table>
+        <table id="16" db="2">
+            <name>t002</name>
+            <caption lang="ja_JP">テスト2</caption>
+        </table>
+        <table id="17" db="2">
+            <name>t01</name>
+            <caption lang="ja_JP">テスト1</caption>
+        </table>
+    </tables>
+    <forms>
+        <form name="actor">
+            <caption lang="ja_JP">俳優FRM</caption>
+        </form>
+        <form name="address">
+            <caption lang="ja_JP">住所FRM</caption>
+        </form>
+        <form name="category">
+            <caption lang="ja_JP">カテゴリFRM</caption>
+        </form>
+        <form name="city">
+            <caption lang="ja_JP">市名マスタ</caption>
+        </form>
+        <form name="country">
+            <caption lang="ja_JP">国名マスタ</caption>
+        </form>
+        <form name="customer">
+            <caption lang="ja_JP">顧客FRM</caption>
+        </form>
+        <form name="film">
+            <caption lang="ja_JP">映画FRM</caption>
+        </form>
+        <form name="film_actor">
+            <caption lang="ja_JP">俳優映画結合FRM</caption>
+        </form>
+        <form name="film_category">
+            <caption lang="ja_JP">カテゴリ映画結合FRM</caption>
+        </form>
+        <form name="inventory">
+            <caption lang="ja_JP">在庫FRM</caption>
+        </form>
+        <form name="language">
+            <caption lang="ja_JP">言語マスタ</caption>
+        </form>
+        <form name="payment">
+            <caption lang="ja_JP">支払いFRM</caption>
+        </form>
+        <form name="rental">
+            <caption lang="ja_JP">レンタルFRM</caption>
+        </form>
+        <form name="staff">
+            <caption lang="ja_JP">職員FRM</caption>
+        </form>
+        <form name="store">
+            <caption lang="ja_JP">店舗マスタ</caption>
+        </form>
+        <form name="test01">
+            <caption lang="ja_JP">テスト01</caption>
+        </form>
+    </forms>
+    <permission>
+        <role name="*">
+            <table id="1">
+                <create/>
+                <read/>
+                <update/>
+                <delete/>
+            </table>
+            <design/>
+        </role>
+    </permission>
+    <initial>
+        <openForm>form1</openForm>
+    </initial>
+    <css></css>
+    <script></script>
+</application>

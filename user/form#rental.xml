@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE form SYSTEM '../xml/form.dtd'>
+
+<form>
+    <title>レンタル</title>
+    <width>500</width>
+    <height>300</height>
+    <db>
+        <table>13</table>
+    </db>
+    <fields>
+        <field id="rental_id" type="text">
+            <width>60</width>
+            <label>
+                <width>140</width>
+                <text>rental_id</text>
+            </label>
+        </field>
+        <field id="rental_date" type="text">
+            <width>200</width>
+            <label>
+                <width>140</width>
+                <text>rental_date</text>
+            </label>
+        </field>
+        <field id="inventory_id" type="text">
+            <width>200</width>
+            <label>
+                <width>140</width>
+                <text>inventory_id</text>
+            </label>
+        </field>
+        <field id="customer_id" type="text">
+            <width>200</width>
+            <label>
+                <width>140</width>
+                <text>customer_id</text>
+            </label>
+        </field>
+        <field id="return_date" type="text">
+            <width>300</width>
+            <label>
+                <width>140</width>
+                <text>return_date</text>
+            </label>
+        </field>
+        <field id="staff_id" type="text">
+            <width>200</width>
+            <label>
+                <width>140</width>
+                <text>staff_id</text>
+            </label>
+        </field>
+        <field id="last_update" type="text">
+            <width>200</width>
+            <label>
+                <width>140</width>
+                <text>last_update</text>
+            </label>
+        </field>
+    </fields>
+</form>

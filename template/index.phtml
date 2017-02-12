@@ -1,0 +1,64 @@
+<?php
+/**
+ * @author Tomohito Inoue <hypernumbernet@users.noreply.github.com>
+ */
+?>
+<ul id="panel-menu">
+    <li id="logo">Conecmo</li>
+    <li id="menu-bar-file" class="menu-bar">ファイル</li>
+    <li id="menu-bar-edit" class="menu-bar">編集</li>
+    <li id="menu-bar-show" class="menu-bar">表示</li>
+    <li id="menu-bar-win" class="menu-bar">ウィンドウ</li>
+</ul>
+<ul id="menu-file" class="menu-unit">
+    <li class="command-app">アプリケーション...</li>
+    <li class="command-db">データベース...</li>
+    <li class="command-form">フォーム...</li>
+    <li class="command-report">レポート...</li>
+    <li class="command-table">テーブル...</li>
+    <li class="command-view">ビュー...</li>
+</ul>
+<ul id="menu-edit" class="menu-unit">
+    <li class="command-undo">元に戻す</li>
+</ul>
+<ul id="menu-show" class="menu-unit">
+    <li class="command-open-list">左メニューを閉じる</li>
+    <li class="command-open-tab">タブ表示モード</li>
+</ul>
+<ul id="menu-win" class="menu-unit">
+    <li class="command-clone">クローン</li>
+    <li class="command-close-all">すべて閉じる</li>
+    <li>-</li>
+    <li class="command-open-window">別ウィンドウを開く</li>
+</ul>
+<div id="panel-list">
+    <div style="height: 30px;"></div>
+    <div class="list-unit">
+        <h3>フォーム</h3>
+        <div id="forms"></div>
+        <h3>レポート</h3>
+        <div id="reports"></div>
+        <h3>テーブル</h3>
+        <div id="tables"></div>
+        <h3>ビュー</h3>
+        <div id="views"></div>
+        <h3>スクリプト</h3>
+        <div id="scripts"></div>
+    </div>
+</div>
+<div id="panel-main"></div>
+<div id="login-dialog">
+    <h1>Conecmo ログイン</h1>
+    <form method="post" action="">
+        <p>
+            <label for="user">ユーザー名</label>
+            <input name="user" type="text">
+        </p>
+        <p>
+            <label for="pass">パスワード</label>
+            <input name="pass" type="password">
+        </p>
+        <input type="submit">
+    </form>
+    <p id="login-message"></p>
+</div>

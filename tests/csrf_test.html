@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<title>CSRF TEST</title>
+<script src="../www/js/jquery-2.2.3.js"></script>
+<script>
+    function getRandom(n, o) {
+        var l = o.length;
+        var p = '';
+        for (var i = 0; i < n; i++)
+            p += o.charAt(Math.floor(l * Math.random()));
+        return p;
+    }
+
+    function makeKey() {
+        return getRandom(16, 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789');
+    }
+
+    var key = makeKey();
+
+    document.cookie = 'key=' + key;
+    $.post(
+        'http://localhost/conecmo/tests/csrf_test.php', {
+            key: key
+        },
+        function (data) {
+            $('body').append('<p>').html(data);
+        })
+        .fail(function () {
+            $('body').append('<p>').html('Error!');
+        });
+
+</script>

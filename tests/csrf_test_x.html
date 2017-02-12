@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<title>CSRF TEST</title>
+<p>別ドメインに設置してこのページをテストしてください。</p>
+<script>
+    document.cookie = 'key=value';
+
+</script>
+<p>キーがない場合。期待値(invalid)</p>
+<form method="post" action="http://localhost/conecmo/tests/csrf_test.php">
+    <input type="submit">
+</form>
+<p>通常。期待値(invalid)</p>
+<form method="post" action="http://localhost/conecmo/tests/csrf_test.php">
+    <input name="key" value="value">
+    <input type="submit">
+</form>

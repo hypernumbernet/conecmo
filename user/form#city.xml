@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE form SYSTEM '../xml/form.dtd'>
+
+<form>
+    <title>市名マスタ</title>
+    <width>450</width>
+    <height>150</height>
+    <db>
+        <table>4</table>
+    </db>
+    <fields>
+        <field id="city_id" type="text">
+            <width>60</width>
+            <label>
+                <width>140</width>
+                <text>city_id:</text>
+            </label>
+        </field>
+        <field id="city" type="text">
+            <width>200</width>
+            <label>
+                <width>140</width>
+                <text>city:</text>
+            </label>
+        </field>
+        <field id="country_id" type="text">
+            <width>120</width>
+            <label>
+                <width>140</width>
+                <text>country_id:</text>
+            </label>
+        </field>
+        <field id="last_update" type="text">
+            <width>200</width>
+            <label>
+                <width>140</width>
+                <text>last_update:</text>
+            </label>
+        </field>
+    </fields>
+</form>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE form SYSTEM '../xml/form.dtd'>
+
+<form>
+    <title>test01</title>
+    <width>450</width>
+    <height>150</height>
+    <db>
+        <table>17</table>
+    </db>
+    <fields>
+        <field id="id" type="text">
+            <width>60</width>
+            <label>
+                <width>140</width>
+                <text>id</text>
+            </label>
+        </field>
+        <field id="var01" type="text">
+            <width>120</width>
+            <label>
+                <width>140</width>
+                <text>var01</text>
+            </label>
+        </field>
+        <field id="i01" type="text">
+            <width>120</width>
+            <label>
+                <width>140</width>
+                <text>i01</text>
+            </label>
+        </field>
+        <field id="t01" type="text">
+            <width>200</width>
+            <label>
+                <width>140</width>
+                <text>t01</text>
+            </label>
+        </field>
+    </fields>
+</form>

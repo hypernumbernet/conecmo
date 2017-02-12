@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE form SYSTEM '../xml/form.dtd'>
+
+<form>
+    <title>支払い</title>
+    <width>500</width>
+    <height>300</height>
+    <db>
+        <table>12</table>
+    </db>
+    <fields>
+        <field id="payment_id" type="text">
+            <width>60</width>
+            <label>
+                <width>140</width>
+                <text>payment_id</text>
+            </label>
+        </field>
+        <field id="customer_id" type="text">
+            <width>200</width>
+            <label>
+                <width>140</width>
+                <text>customer_id</text>
+            </label>
+        </field>
+        <field id="staff_id" type="text">
+            <width>200</width>
+            <label>
+                <width>140</width>
+                <text>staff_id</text>
+            </label>
+        </field>
+        <field id="rental_id" type="text">
+            <width>200</width>
+            <label>
+                <width>140</width>
+                <text>rental_id</text>
+            </label>
+        </field>
+        <field id="amount" type="text">
+            <width>300</width>
+            <label>
+                <width>140</width>
+                <text>amount</text>
+            </label>
+        </field>
+        <field id="payment_date" type="text">
+            <width>200</width>
+            <label>
+                <width>140</width>
+                <text>payment_date</text>
+            </label>
+        </field>
+    </fields>
+</form>

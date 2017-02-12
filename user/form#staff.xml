@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE form SYSTEM '../xml/form.dtd'>
+
+<form>
+    <title>職員</title>
+    <width>500</width>
+    <height>400</height>
+    <db>
+        <table>14</table>
+    </db>
+    <fields>
+        <field id="staff_id" type="text">
+            <width>60</width>
+            <label>
+                <width>140</width>
+                <text>staff_id</text>
+            </label>
+        </field>
+        <field id="first_name" type="text">
+            <width>200</width>
+            <label>
+                <width>140</width>
+                <text>first_name</text>
+            </label>
+        </field>
+        <field id="last_name" type="text">
+            <width>200</width>
+            <label>
+                <width>140</width>
+                <text>last_name</text>
+            </label>
+        </field>
+        <field id="address_id" type="text">
+            <width>200</width>
+            <label>
+                <width>140</width>
+                <text>address_id</text>
+            </label>
+        </field>
+        <field id="email" type="text">
+            <width>300</width>
+            <label>
+                <width>140</width>
+                <text>email</text>
+            </label>
+        </field>
+        <field id="store_id" type="text">
+            <width>200</width>
+            <label>
+                <width>140</width>
+                <text>store_id</text>
+            </label>
+        </field>
+        <field id="active" type="text">
+            <width>200</width>
+            <label>
+                <width>140</width>
+                <text>active</text>
+            </label>
+        </field>
+        <field id="username" type="text">
+            <width>200</width>
+            <label>
+                <width>140</width>
+                <text>username</text>
+            </label>
+        </field>
+        <field id="password" type="text">
+            <width>200</width>
+            <label>
+                <width>140</width>
+                <text>password</text>
+            </label>
+        </field>
+        <field id="last_update" type="text">
+            <width>200</width>
+            <label>
+                <width>140</width>
+                <text>last_update</text>
+            </label>
+        </field>
+        <field id="picture" type="text">
+            <width>200</width>
+            <label>
+                <width>140</width>
+                <text>picture</text>
+            </label>
+        </field>
+    </fields>
+</form>

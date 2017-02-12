@@ -1,0 +1,3 @@
+﻿SELECT *
+FROM editing
+ORDER BY id DESC

@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT form (fieldMargin|color|font|fields)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT fieldMargin (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT color (fore|back)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT fore (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT back (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT font (family|size)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT family (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT size (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT fields (lineEdit)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT lineEdit (position|display|width|align|tooltip|label|css|top|left)*>
+<!ATTLIST lineEdit
+    id CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT position (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT display (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT width (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT align (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT tooltip (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT label (position|width|text|rightText|top|left)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT text (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT rightText EMPTY>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT css (style|class|hoverClass)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT style EMPTY>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT class EMPTY>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT hoverClass EMPTY>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT top (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT left (#PCDATA)>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE form SYSTEM '../xml/form.dtd'>
+
+<form>
+    <title>住所</title>
+    <width>450</width>
+    <height>300</height>
+    <db>
+        <table>2</table>
+    </db>
+    <fields>
+        <field id="address_id" type="text">
+            <width>60</width>
+            <label>
+                <width>140</width>
+                <text>address_id:</text>
+            </label>
+        </field>
+        <field id="address" type="text">
+            <width>200</width>
+            <label>
+                <width>140</width>
+                <text>address:</text>
+            </label>
+        </field>
+        <field id="address2" type="text">
+            <width>200</width>
+            <label>
+                <width>140</width>
+                <text>address2:</text>
+            </label>
+        </field>
+        <field id="district" type="text">
+            <width>200</width>
+            <label>
+                <width>140</width>
+                <text>district:</text>
+            </label>
+        </field>
+        <field id="city_id" type="text">
+            <width>200</width>
+            <label>
+                <width>140</width>
+                <text>city_id:</text>
+            </label>
+        </field>
+        <field id="postal_code" type="text">
+            <width>200</width>
+            <label>
+                <width>140</width>
+                <text>postal_code:</text>
+            </label>
+        </field>
+        <field id="phone" type="text">
+            <width>200</width>
+            <label>
+                <width>140</width>
+                <text>phone:</text>
+            </label>
+        </field>
+        <field id="last_update" type="text">
+            <width>200</width>
+            <label>
+                <width>140</width>
+                <text>last_update:</text>
+            </label>
+        </field>
+    </fields>
+</form>

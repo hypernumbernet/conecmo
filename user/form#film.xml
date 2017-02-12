@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE form SYSTEM '../xml/form.dtd'>
+
+<form>
+    <title>映画</title>
+    <width>500</width>
+    <height>400</height>
+    <db>
+        <table>7</table>
+    </db>
+    <fields>
+        <field id="film_id" type="text">
+            <width>60</width>
+            <label>
+                <width>140</width>
+                <text>film_id</text>
+            </label>
+        </field>
+        <field id="title" type="text">
+            <width>200</width>
+            <label>
+                <width>140</width>
+                <text>title</text>
+            </label>
+        </field>
+        <field id="description" type="text">
+            <width>200</width>
+            <label>
+                <width>140</width>
+                <text>description</text>
+            </label>
+        </field>
+        <field id="release_year" type="text">
+            <width>200</width>
+            <label>
+                <width>140</width>
+                <text>release_year</text>
+            </label>
+        </field>
+        <field id="language_id" type="text">
+            <width>300</width>
+            <label>
+                <width>140</width>
+                <text>language_id</text>
+            </label>
+        </field>
+        <field id="rental_duration" type="text">
+            <width>200</width>
+            <label>
+                <width>140</width>
+                <text>rental_duration</text>
+            </label>
+        </field>
+        <field id="rental_rate" type="text">
+            <width>200</width>
+            <label>
+                <width>140</width>
+                <text>rental_rate</text>
+            </label>
+        </field>
+        <field id="length" type="text">
+            <width>200</width>
+            <label>
+                <width>140</width>
+                <text>length</text>
+            </label>
+        </field>
+        <field id="replacement_cost" type="text">
+            <width>200</width>
+            <label>
+                <width>140</width>
+                <text>replacement_cost</text>
+            </label>
+        </field>
+        <field id="rating" type="text">
+            <width>200</width>
+            <label>
+                <width>140</width>
+                <text>rating</text>
+            </label>
+        </field>
+        <field id="last_update" type="text">
+            <width>200</width>
+            <label>
+                <width>140</width>
+                <text>last_update</text>
+            </label>
+        </field>
+        <field id="special_features" type="text">
+            <width>200</width>
+            <label>
+                <width>140</width>
+                <text>special_features</text>
+            </label>
+        </field>
+        <field id="fulltext" type="text">
+            <width>200</width>
+            <label>
+                <width>140</width>
+                <text>fulltext</text>
+            </label>
+        </field>
+    </fields>
+</form>

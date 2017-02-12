@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE form SYSTEM '../xml/form.dtd'>
+
+<form>
+    <width>800</width>
+    <height>500</height>
+    <fieldMargin>5</fieldMargin>
+    <color>
+        <fore>black</fore>
+        <back>#ddd</back>
+    </color>
+    <font>
+        <family>sans-serif</family>
+        <size>15</size>
+    </font>
+    <script></script>
+    <fields>
+        <field id="i001" type="text">
+            <position>static</position>
+            <float>left</float>
+            <width>200</width>
+            <align>left</align>
+            <tooltip>Tips</tooltip>
+            <label>
+                <width>140</width>
+                <text>フィールド01:</text>
+            </label>
+            <rightLabel>
+                <width>140</width>
+                <text>F01右</text>
+            </rightLabel>
+            <css>
+                <style></style>
+                <class></class>
+                <hoverClass></hoverClass>
+            </css>
+        </field>
+        <field id="i002" type="text">
+            <width>100</width>
+            <label>
+                <text>フィールド02:</text>
+            </label>
+        </field>
+        <field id="i003" type="text">
+        </field>
+        <field id="id" type="text">
+            <position>absolute</position>
+            <width>200</width>
+            <top>100</top>
+            <left>400</left>
+            <tooltip>absolute field</tooltip>
+            <label>
+                <text>id: </text>
+                <width>50</width>
+                <top>100</top>
+                <left>350</left>
+            </label>
+        </field>
+    </fields>
+</form>

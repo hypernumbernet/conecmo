@@ -1,0 +1,45 @@
+コーディング規約
+
+
+[JavaScriptソースコード]
+
+システムで使用するグローバル空間の名前はSysから開始してパスカルケースにする。
+
+定数は、SysCstに集約する。
+
+jQueryオブジェクトを入れる変数は、「$」から開始する名前にする。
+
+関数名はキャメルケース、変数名はスネークケースで名前を付ける。
+
+JSDoc @paramに使用する型名は以下の通り。
+
+string
+number
+boolean
+undefined
+null
+Array.<(型名)>
+Object (関数を保有するObjectはその名前を直接指定する)
+Function
+* (すべての型を許容)
+
+その他、型名に関して以下の規約が推奨される。
+http://www38.atwiki.jp/aias-jsstyleguide2/pages/17.html
+
+JSDocで値を返さない関数の@returnは書かない。
+
+undefined値を取得する場合は、「void 0」を使用する。
+
+
+[HTMLソースコード]
+
+CSS名は、「-」で区切る名前にする。
+
+
+[その他]
+
+単純なゲッターメソッド、セッターメソッドを作成しない。
+
+細かい点は、NetBeans IDE のフォーマット定義ファイルを共有する。
+
+その他は、Ae Framework コーディング規約に準拠する。

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE form SYSTEM '../xml/form.dtd'>
+
+<form>
+    <title>在庫</title>
+    <width>450</width>
+    <height>150</height>
+    <db>
+        <table>10</table>
+    </db>
+    <fields>
+        <field id="inventory_id" type="text">
+            <width>60</width>
+            <label>
+                <width>140</width>
+                <text>inventory_id</text>
+            </label>
+        </field>
+        <field id="film_id" type="text">
+            <width>60</width>
+            <label>
+                <width>140</width>
+                <text>film_id</text>
+            </label>
+        </field>
+        <field id="store_id" type="text">
+            <width>60</width>
+            <label>
+                <width>140</width>
+                <text>store_id</text>
+            </label>
+        </field>
+        <field id="last_update" type="text">
+            <width>200</width>
+            <label>
+                <width>140</width>
+                <text>last_update:</text>
+            </label>
+        </field>
+    </fields>
+</form>

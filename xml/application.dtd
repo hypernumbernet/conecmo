@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!--
+    TODO define vocabulary identification
+    PUBLIC ID: -//vendor//vocabulary//EN
+    SYSTEM ID: http://server/path/application.dtd
+
+-->
+
+<!--
+    An example how to use this DTD from your XML document:
+
+    <?xml version="1.0"?>
+
+    <!DOCTYPE application SYSTEM "application.dtd">
+
+    <application>
+    ...
+    </application>
+-->
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT application (databases|tables|forms|permission|initial|css|script)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT databases (database)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT database (name|adapter|dbname|user|pass)*>
+<!ATTLIST database
+    id CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT name (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT adapter (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT dbname (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT user (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT pass (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT tables (table)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT table (name)*>
+<!ATTLIST table
+    id CDATA #IMPLIED
+    db CDATA #IMPLIED
+    name CDATA #IMPLIED
+    operation CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT forms (form)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT form (name)*>
+<!ATTLIST form
+    id CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT permission (role)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT role (table|design)*>
+<!ATTLIST role
+    name CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT design EMPTY>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT initial (openForm)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT openForm (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT css EMPTY>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT script EMPTY>

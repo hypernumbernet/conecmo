@@ -1,0 +1,245 @@
+
+body {
+    background-color: #eee;
+    margin: 0;
+}
+
+.form {
+    background-color: #e8e5de;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+
+.form-footer {
+    position: relative;
+    height: 28px;
+    background-color: #ccc;
+}
+
+.form .field {
+    margin: 5px;
+}
+
+.table {
+    background-color: #e8e5de;
+    font-size: 15px;
+}
+
+.a-field {
+    position: absolute;
+    margin: 0;
+}
+
+.list-unit button {
+    width: 100%;
+    text-align: left;
+    overflow: hidden;
+}
+
+.list-unit div {
+    max-height: 500px;
+    min-height: 20px;
+}
+
+.menu-unit {
+    position: absolute;
+    display: none;
+    z-index: 71000;
+}
+
+.ui-menu {
+    width: 200px;
+    font-size: 12px;
+}
+
+#panel-main {
+    position: fixed;
+    background-color: #eee;
+    top: 30px;
+    left: 200px;
+    margin: 0;
+    padding: 0;
+}
+
+#panel-list {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #aaa;
+    z-index: 60000;
+}
+
+#panel-debug {
+    position: fixed;
+    width: 100%;
+    height: 300px;
+    bottom: 0;
+    background-color: #333;
+    color: #ddd;
+}
+#panel-menu {
+    position: fixed;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #aaa;
+    height: 30px;
+    z-index: 70001;
+}
+
+#panel-menu li {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 5px 6px;
+    text-decoration: none;
+    height: 20px;
+    border: 1px solid #aaa;
+    cursor: pointer;
+}
+
+#logo {
+    background-color: gold;
+    cursor: default !important;
+}
+
+#modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 120%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.3);
+}
+
+#login-dialog {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 120%;
+    width: 100%;
+    display: none;
+    background-color: #f6f6f6;
+    z-index: 90000;
+    padding: 100px;
+}
+
+#login-dialog label {
+    display: inline-block;
+    width: 100px;
+}
+
+#login-dialog input {
+    width: 200px;
+}
+
+.footer-current {
+    width: 80px;
+    text-align: right;
+    height: 19px;
+}
+
+.form-footer .button {
+    width: 25px;
+    height: 25px;
+    padding:0;
+    font-size: 0.7em;
+    line-height:0.5;
+}
+
+.sb-horizontal {
+    position: absolute;
+    display: table;
+    height: 16px;
+    width: 100%;
+    bottom: 0;
+    background-color: #eee;
+}
+
+.sb-horizontal .arrow {
+    display: table-cell;
+    width: 16px;
+    text-align: center;
+    vertical-align:middle;
+}
+
+.sb-horizontal .slide-area {
+    display: table-cell;
+}
+
+.sb-horizontal .slider {
+    background-color: #999;
+    width: 30px;
+    height: 14px;
+    margin-top: 1px;
+}
+
+.sb-vertical {
+    position: absolute;
+    display: table;
+    height: 100%;
+    width: 16px;
+    right: 0;
+    background-color: #eee;
+}
+
+.sb-vertical .arrow {
+    display: table-row;
+    height: 16px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.sb-vertical .slide-area {
+    display: table-row;
+}
+
+.sb-vertical .slider {
+    background-color: #999;
+    width: 14px;
+    height: 30px;
+    margin-left: 1px;
+}
+
+.grid {
+    border-collapse: collapse;
+}
+
+.grid tr {
+    height: 20px;
+}
+
+.grid td {
+    border: solid 1px #666;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.grid thead {
+    background-color: #999;
+}
+
+.grid thead td:first-child {
+    width: 7px;
+}
+
+.grid-data {
+    background-color: #FFF;
+}
+
+.grid-command {
+    background-color: #BBB;
+    text-align: center;
+}
+
+.grid-input-text {
+    position: absolute;
+    display: none;
+    margin: 0;
+    padding: 0;
+    border-width: 0;
+}
