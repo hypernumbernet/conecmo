@@ -84,14 +84,6 @@
             <name>store</name>
             <caption lang="ja_JP">店舗マスタ</caption>
         </table>
-        <table id="16" db="2">
-            <name>t002</name>
-            <caption lang="ja_JP">テスト2</caption>
-        </table>
-        <table id="17" db="2">
-            <name>t01</name>
-            <caption lang="ja_JP">テスト1</caption>
-        </table>
     </tables>
     <forms>
         <form name="actor">
@@ -138,9 +130,6 @@
         </form>
         <form name="store">
             <caption lang="ja_JP">店舗マスタ</caption>
-        </form>
-        <form name="test01">
-            <caption lang="ja_JP">テスト01</caption>
         </form>
     </forms>
     <permission>

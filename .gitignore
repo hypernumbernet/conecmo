@@ -9,7 +9,3 @@
 /cache/*
 /lib/Conecmo/Env.php
 !.gitkeep
-/www/js/jquery-ui-1.11.4
-/www/font-awesome-4.6.3
-/www/js/lib/jquery-2.2.4.js
-/www/js/lib/jquery.mousewheel3.1.13.js
